@@ -1,4 +1,5 @@
 *.epub
+*.mobi
 /Brandon Sanderson/*.epub
 /Brandon Sanderson/Elantris/*.epub
 /Brandon Sanderson/Stormlight/*.epub
