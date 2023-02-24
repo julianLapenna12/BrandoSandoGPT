@@ -5,7 +5,11 @@ from bs4 import BeautifulSoup
 # path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/The_Way_of_Kings'
 # path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/Words_of_Radiance'
 # path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/Oathbringer'
-path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/Rhythm_of_War'
+# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/Rhythm_of_War'
+# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/Edgedancer'
+path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/Dawnshard'
+
+
 # https://colab.research.google.com/github/ZA3karia/PDF2TEXT/blob/master/ebook_to_text.ipynb#scrollTo=655qYKDx2UYU
 
 def epub2thtml(epub_path):
@@ -51,16 +55,21 @@ out = epub2text(path + '.epub')
 # out = out[5:106] # TWoK
 # out = out[9:140] # WoR
 # out = out[9:172] # O
-out = out[10:169] # RoW
+# out = out[10:169] # RoW
+# out = out[3:24] # Edgedancer
+out = out[6:29] # Dawnshard
+
 
 txtout = []
 
 for _ in out:
+    _ = _[2:] # gets rid of starting chap nums in dawnshard
     _ = _.replace("\n ", '')
     _ = _.replace("*\xa0", '')
     _ = _.replace("\xa0*", '')
     _ = _.replace("'\xa0", '')
-    txtout.append(' '.join(_.split()))
+    _ = _.replace("\xa0", '')
+    txtout.append(' '.join(_.split())) # removes excess spaces
 
 with open(path+".txt", "a") as myfile:
     for _ in txtout:
