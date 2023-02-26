@@ -36,13 +36,18 @@ python3 Brandon_Sanderson/Stormlight/append_file.py --output_file.txt --book1.tx
 
 On lighter machines (i.e. laptops, macbooks) the model can only be trained on smaller paramaters
 ```
-$ python train.py config/train_shakespeare_char.py --device=cpu --compile=False --eval_iters=20 --log_interval=1 --block_size=64 --batch_size=12 --n_layer=4 --n_head=4 --n_embd=128 --max_iters=2000 --lr_decay_iters=2000 --dropout=0.0
+$ python train.py config/train_char.py --device=cpu --compile=False --eval_iters=20 --log_interval=1 --block_size=64 --batch_size=12 --n_layer=4 --n_head=4 --n_embd=128 --max_iters=2000 --lr_decay_iters=2000 --dropout=0.0
 ```
 or on heavier machines, we can use the full set
 ```
-$ python train.py config/train_shakespeare_char.py
+$ python train.py config/train_char.py
 ```
 
+### 3. Finally, sample from the model
+```
+$ python3 sample.py --out_dir=out-sanderson-char
+```
+and sample paragraphs will be generated to the command line.
 
 TODO:
 - train on gpu
