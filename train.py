@@ -32,7 +32,7 @@ from model import GPTConfig, GPT
 # -----------------------------------------------------------------------------
 # default config values designed to train a gpt2 (124M) on OpenWebText
 # I/O
-out_dir = 'out-twok-char'
+out_dir = 'out-sanderson-char'
 eval_interval = 2000
 log_interval = 1
 eval_iters = 200

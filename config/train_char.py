@@ -1,7 +1,7 @@
 # train a miniature character-level twok model
 # good for debugging and playing on macbooks and such
 
-out_dir = 'out-twok-char'
+out_dir = 'out-sanderson-char'
 eval_interval = 20 # keep frequent because we'll overfit
 eval_iters = 200
 log_interval = 10 # don't print too too often
@@ -10,10 +10,10 @@ log_interval = 10 # don't print too too often
 always_save_checkpoint = False
 
 wandb_log = False # override via command line if you like
-wandb_project = 'twok-char'
+wandb_project = 'sanderson-char'
 wandb_run_name = 'mini-gpt'
 
-dataset = 'twok_char'
+dataset = 'sanderson_char'
 batch_size = 64
 block_size = 256 # context of up to 256 previous characters
 

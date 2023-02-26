@@ -25,7 +25,7 @@ match sys.argv[1].lower():
 
 data_url += file_name
 
-# download twok dataset
+# download dataset
 input_file_path = os.path.join(os.path.dirname(__file__), file_name) # scoop from file
 if not os.path.exists(input_file_path): # or from url
     with open(input_file_path, 'w') as f:

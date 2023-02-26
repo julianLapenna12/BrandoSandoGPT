@@ -2,4 +2,4 @@
 *.mobi
 *.bin
 __pycache__/*
-out-twok-char/*
+out-sanderson-char/*
