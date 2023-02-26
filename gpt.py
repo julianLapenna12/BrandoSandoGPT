@@ -18,7 +18,7 @@ dropout = 0.2
 
 torch.manual_seed(1337)
 
-with open('Brandon Sanderson/Stormlight/The_Way_of_Kings.txt', 'r', encoding='utf-8') as f:
+with open('Brandon_Sanderson/Stormlight/The_Way_of_Kings.txt', 'r', encoding='utf-8') as f:
     text = f.read()
 
 # here are all the unique characters that occur in this text

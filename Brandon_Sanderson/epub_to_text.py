@@ -2,12 +2,12 @@ import ebooklib
 from ebooklib import epub
 from bs4 import BeautifulSoup
 
-# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/The_Way_of_Kings'
-# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/Words_of_Radiance'
-# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/Oathbringer'
-# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/Rhythm_of_War'
-# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/Edgedancer'
-path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon Sanderson/Stormlight/Dawnshard'
+# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon_Sanderson/Stormlight/The_Way_of_Kings'
+# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon_Sanderson/Stormlight/Words_of_Radiance'
+# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon_Sanderson/Stormlight/Oathbringer'
+# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon_Sanderson/Stormlight/Rhythm_of_War'
+# path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon_Sanderson/Stormlight/Edgedancer'
+path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon_Sanderson/Stormlight/Dawnshard'
 
 
 # https://colab.research.google.com/github/ZA3karia/PDF2TEXT/blob/master/ebook_to_text.ipynb#scrollTo=655qYKDx2UYU
