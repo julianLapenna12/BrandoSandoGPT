@@ -2,6 +2,11 @@ import ebooklib
 from ebooklib import epub
 from bs4 import BeautifulSoup
 
+"""
+Turns an epub document into a text document. Each chapter/section is its own string in 
+the list `out` so you need to find which chapters/sections contain the text in a given book
+"""
+
 # path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon_Sanderson/Stormlight/The_Way_of_Kings'
 # path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon_Sanderson/Stormlight/Words_of_Radiance'
 # path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon_Sanderson/Stormlight/Oathbringer'
@@ -9,7 +14,7 @@ from bs4 import BeautifulSoup
 # path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon_Sanderson/Stormlight/Edgedancer'
 path = r'/home/julian/Documents/Projects/BrandoSandoGPT/Brandon_Sanderson/Stormlight/Dawnshard'
 
-
+# for testing which chapters are valid
 # https://colab.research.google.com/github/ZA3karia/PDF2TEXT/blob/master/ebook_to_text.ipynb#scrollTo=655qYKDx2UYU
 
 def epub2thtml(epub_path):
@@ -62,6 +67,7 @@ out = out[6:29] # Dawnshard
 
 txtout = []
 
+# get rid of any odd characters you find here so model doesn't train on them
 for _ in out:
     _ = _[2:] # gets rid of starting chap nums in dawnshard
     _ = _.replace("\n ", '')
@@ -71,6 +77,7 @@ for _ in out:
     _ = _.replace("\xa0", '')
     txtout.append(' '.join(_.split())) # removes excess spaces
 
+# write to txt file
 with open(path+".txt", "a") as myfile:
     for _ in txtout:
         myfile.write(_)
