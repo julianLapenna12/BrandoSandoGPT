@@ -6,22 +6,25 @@ import sys
 
 data_url = 'https://raw.githubusercontent.com/julianLapenna12/BrandoSandoGPT/master/Brandon_Sanderson/Stormlight/'
 
-match sys.argv[1].lower():
-    case 'twok':
-        file_name = 'The_Way_of_Kings.txt'
-    case 'wor':
-        file_name = 'Words_of_Radiance.txt'
-    case 'o':
-        file_name = 'Oathbringer.txt'
-    case 'row':
-        file_name = 'Rhythm_of_War.txt'
-    case 'dawn':
-        file_name = 'Dawnshard.txt'
-    case 'edge':
-        file_name = 'Edgedancer.txt'
-    case _:
-        file_name = 'all.txt'
+if len(sys.argv) == 1:
+    file_name = 'all.txt'
 
+else:
+    match sys.argv[1].lower():
+        case 'twok':
+            file_name = 'The_Way_of_Kings.txt'
+        case 'wor':
+            file_name = 'Words_of_Radiance.txt'
+        case 'o':
+            file_name = 'Oathbringer.txt'
+        case 'row':
+            file_name = 'Rhythm_of_War.txt'
+        case 'dawn':
+            file_name = 'Dawnshard.txt'
+        case 'edge':
+            file_name = 'Edgedancer.txt'
+        case _:
+            file_name = 'all.txt'
 
 data_url += file_name
 
