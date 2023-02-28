@@ -19,12 +19,12 @@ with more on the way!
 $ python3 Brandon_Sanderson/Stormlight/prepare.py {name of book here}
 ```
 If no book name is provided it defaults to using all Stormlight books as text to train on, otherwise the following options lets you select which book to train on:
-- `'twok'`
-- `'wor'`
-- `'o'`
-- `'row'`
-- `'dawn'`
-- `'edge'`
+- `twok`
+- `wor`
+- `o`
+- `row`
+- `dawn`
+- `edge`
 
 Note: If you want to train the model on a specific subset of the books, call 
 ```
