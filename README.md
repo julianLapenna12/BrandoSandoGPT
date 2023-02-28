@@ -49,7 +49,11 @@ $ python3 sample.py --out_dir=out-sanderson-char
 ```
 and sample paragraphs will be generated to the command line.
 
-TODO:
+
+
+#### TODO:
 - train on gpu
 - add better transition between cpu and gpu
+- add loss graphs
+- add samples and seeds
 -
