@@ -3,12 +3,12 @@
 Based on [Andrej Karpathy's nanoGPT](https://github.com/karpathy/nanoGPT) this is a GPT model that generates text in the style of the author Brandon Sanderson.
 
 Texts available to train from:
-- TWoK
-- WoR
+- The Way of Kings
+- Words of Radiance
 - Edgedancer
 - Oathbringer
 - Dawnshard
-- RoW
+- Rhythm of War
  
 with more on the way!
 
