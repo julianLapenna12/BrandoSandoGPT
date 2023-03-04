@@ -10,7 +10,7 @@ if len(sys.argv) == 1:
     file_name = 'all.txt'
 
 else:
-    match sys.argv[1].lower():
+    match (sys.argv[1].lower()):
         case 'twok':
             file_name = 'The_Way_of_Kings.txt'
         case 'wor':

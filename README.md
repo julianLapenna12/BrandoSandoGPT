@@ -1,6 +1,6 @@
 # BrandoSandoGPT
 
-Based on [Andrej Karpathy's nanoGPT](https://github.com/karpathy/nanoGPT) this is a GPT model that generates text in the style of the author Brandon Sanderson.
+Based on [Andrej Karpathy's nanoGPT](https://github.com/karpathy/nanoGPT) this is a GPT model that generates text in the style of the author Brandon Sanderson. It requires the same dependancies listed below:
 
 Texts available to train from:
 - The Way of Kings
@@ -11,6 +11,17 @@ Texts available to train from:
 - Rhythm of War
  
 with more on the way!
+ # 
+## Dependencies:
+
+- [pytorch](https://pytorch.org) <3
+- [numpy](https://numpy.org/install/) <3
+- `pip install transformers` for huggingface transformers <3 (to load GPT-2 checkpoints)
+- `pip install datasets` for huggingface datasets <3 (if you want to download + preprocess OpenWebText)
+- `pip install tiktoken` for OpenAI's fast BPE code <3
+- `pip install wandb` for optional logging <3
+- `pip install tqdm`
+ # 
 
 ## Training Guide
 
@@ -31,7 +42,7 @@ Note: If you want to train the model on a specific subset of the books, call
 python3 Brandon_Sanderson/Stormlight/append_file.py --output_file.txt --book1.txt --book2.txt --book3.txt
 ```
 
-
+#
 ### 2. Train the model 
 
 On lighter machines (i.e. laptops, macbooks) the model can only be trained on smaller paramaters
@@ -40,9 +51,9 @@ $ python train.py config/train_char.py --device=cpu --compile=False --eval_iters
 ```
 or on heavier machines, we can use the full set
 ```
-$ python train.py config/train_char.py
+$ python3 train.py config/train_char.py
 ```
-
+#
 ### 3. Finally, sample from the model
 ```
 $ python3 sample.py --out_dir=out-sanderson-char
@@ -50,7 +61,7 @@ $ python3 sample.py --out_dir=out-sanderson-char
 and sample paragraphs will be generated to the command line.
 
 
-
+#
 #### TODO:
 - train on gpu
 - add better transition between cpu and gpu
