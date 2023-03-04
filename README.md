@@ -11,7 +11,8 @@ Texts available to train from:
 - Rhythm of War
  
 with more on the way!
- # 
+<br />  
+<br />
 ## Dependencies:
 
 - [pytorch](https://pytorch.org) <3
@@ -21,7 +22,7 @@ with more on the way!
 - `pip install tiktoken` for OpenAI's fast BPE code <3
 - `pip install wandb` for optional logging <3
 - `pip install tqdm`
- # 
+<br />
 
 ## Training Guide
 
@@ -42,7 +43,8 @@ Note: If you want to train the model on a specific subset of the books, call
 python3 Brandon_Sanderson/Stormlight/append_file.py --output_file.txt --book1.txt --book2.txt --book3.txt
 ```
 
-#
+<br />  
+
 ### 2. Train the model 
 
 On lighter machines (i.e. laptops, macbooks) the model can only be trained on smaller paramaters
@@ -53,15 +55,17 @@ or on heavier machines, we can use the full set
 ```
 $ python3 train.py config/train_char.py
 ```
-#
+
+<br />  
+
 ### 3. Finally, sample from the model
 ```
 $ python3 sample.py --out_dir=out-sanderson-char
 ```
 and sample paragraphs will be generated to the command line.
-
-
+  
 #
+
 #### TODO:
 - train on gpu
 - add better transition between cpu and gpu
