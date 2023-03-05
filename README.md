@@ -75,13 +75,33 @@ and sample paragraphs will be generated to the command line.
 Using the model I trained above here are some outputs I got:
 
 ```
-Their powers  will  become the same.” Kaladin didn’t know how much of this could be a power to protect such, but it was a good weapon. “The chance we could get through without Shards.” She stopped in place, then glanced at Elhokar. “I’ll be expecting this to manipulate the enemy, Elhokar.” “No,” Kaladin said, then scratched his head. “I will send men to help.” Kaladin looked over his shoulder.
+Their powers  will  become the same.” Kaladin didn’t know how much 
+of this could be a power to protect such, but it was a good weapon. 
+“The chance we could get through without Shards.” She stopped in place, 
+then glanced at Elhokar. “I’ll be expecting this to manipulate the 
+enemy, Elhokar.” “No,” Kaladin said, then scratched his head. “I will 
+send men to help.” Kaladin looked over his shoulder.
 ```
 ```
-Dalinar didn’t want to handle it. “What do you think of this?” “And my vision,” Jasnah said, “to give you your way.” Jasnah shook her head. “Why did you  let me be allowed to be a little time?” “Whatever you’d had expected.” “What?” “Because I didn’t. You wish to be Jasnah.” Dalinar closed his eyes, feeling awkward. She felt cold, then sighed and walked back to Dalinar. “I’m sorry.” “Go,” Jasnah said, Stormlight leaking from the floor. Jasnah sighed as he stalked through the crowd, but Navani led the way to a small group of men on the eastern gallery, where scouts were waving orders against the Shattered Plains. “You will start with me, child,” Dalinar said.
+Dalinar didn’t want to handle it. “What do you think of this?” “And 
+my vision,” Jasnah said, “to give you your way.” Jasnah shook her 
+head. “Why did you  let me be allowed to be a little time?” “Whatever 
+you’d had expected.” “What?” “Because I didn’t. You wish to be Jasnah.” 
+Dalinar closed his eyes, feeling awkward. She felt cold, then sighed 
+and walked back to Dalinar. “I’m sorry.” “Go,” Jasnah said, Stormlight 
+leaking from the floor. Jasnah sighed as he stalked through the crowd, 
+but Navani led the way to a small group of men on the eastern gallery, 
+where scouts were waving orders against the Shattered Plains. “You 
+will start with me, child,” Dalinar said.
 ```
 ```
-These were the same, though she’d never seen anything like those in Alethkar. The Fused who had been hiding in Urithiru. They’d been set up on the Oathgates; the other red eyes were gone … well, it was growing thicker than the Alethi ones before. The red eyes began to pass. “These are unimportant,” Elhokar said to her, sounding troubled. “They are our true ancestors. They are new.” He pointed to Shallan. “They are our leader,  Shallan.”
+These were the same, though she’d never seen anything like those in 
+Alethkar. The Fused who had been hiding in Urithiru. They’d been set 
+up on the Oathgates; the other red eyes were gone … well, it was 
+growing thicker than the Alethi ones before. The red eyes began to pass. 
+“These are unimportant,” Elhokar said to her, sounding troubled. “They 
+are our true ancestors. They are new.” He pointed to Shallan. “They are 
+our leader,  Shallan.”
 ```
 
 It can't really keep a plotline at this level of training, and not all the sentences are gramatically correct. But it definitely knows the characters, roughly the right language and can distinguish the Fused from the Radiants. So overall not bad, and much better than training on a laptop CPU.
