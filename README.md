@@ -60,9 +60,9 @@ $ python3 train.py config/train_char.py
 
 Loss graph after ~3000 iterations trained with `--batch_size=8 --n_layer=8 --n_head=8 --n_embd=512 --block_size=512`, approximately 50M params:
 
-![repro124m](plot/output.png)
+![repro50m](plot/output.png)
 
-Minimal validation loss occurs at iteration 1877 with a validation loss of 3.641. The validation loss after was roughly constant after 1500 iterations, but not bad nevertheless.
+Minimal validation loss occurs at iteration 1877 with a validation loss of 3.641. The validation loss was roughly constant after 1500 iterations, but not bad nevertheless.
 
 <br />  
 
